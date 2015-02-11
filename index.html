@@ -97,7 +97,9 @@
 		<p><a href="https://github.com/antarctica">British Antarctic Survey Github Repositories</a></p>
 
 
-		{% for repo in public_repositories %}
+		<h2>Repo Listing</h2>
+
+		{% for repo in site.github.public_repositories %}
 
 		{{ repo.name }}
 
