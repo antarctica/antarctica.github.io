@@ -1,0 +1,132 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	
+	<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="https://secure.antarctica.ac.uk/style/main.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="https://secure.antarctica.ac.uk/style/print_main.css" type="text/css" media="print" />
+		
+
+	<script type="text/javascript" src="https://secure.antarctica.ac.uk/script/javascript/bas.js"></script>
+	<script type="text/javascript" src="https://secure.antarctica.ac.uk/script/javascript/main.js"></script>
+	<script type="text/javascript" src="https://secure.antarctica.ac.uk/script/javascript/gallery.js"></script>
+		
+	
+	<link rel="alternate" type="application/rss+xml" title="British Antarctic Survey - Daily Image" href="http://www.antarctica.ac.uk/images/daily/image.php?numCategoryID=2" />
+	<link rel="alternate" type="application/rss+xml" title="British Antarctic Survey - Penguin of the Day" href="http://www.antarctica.ac.uk/images/daily/image.php?numCategoryID=1" />
+        
+        <style>
+         
+            a.btnmain {
+                padding: 8px;
+                background: #eee;
+                border: 1px solid black;
+                font-size: 12pt;
+                font-weight: bold;
+                text-decoration: none;
+                margin: 10px;
+            }
+            
+        </style>
+</head>
+<body>
+
+<div id="globalPositioning">
+<a name="top" id="top"></a>
+<a href="#beginContent" title="Access key S - skip navigation" class="skipNavigation" accesskey="s">Skip navigation</a>
+
+	<div id="header">
+		<a href="http://www.antarctica.ac.uk/index.php" title="Access key 1 - Homepage" accesskey="1">
+		<img src="https://secure.antarctica.ac.uk/template/pspe/images/09.jpg" alt="Aircraft flying over ice" title="Aircraft flying over ice" width="760" height="120" />
+		</a>
+		<!--START QUICK LINKS-->
+		<ul id="quickLinksList">
+			<li><a href="http://www.antarctica.ac.uk/press/index.php" title="Information for the Press and Media">Press</a> | </li>
+			<li><a href="http://www.antarctica.ac.uk/employment/index.php" title="Working at the British Antarctic Survey">Employment</a> | </li>
+			<li><a href="http://www.antarctica.ac.uk/about_bas/contact/index.php" title="Access key 6 - Contact Us" accesskey="6">Contact Us</a></li>
+		</ul>
+		<!--END QUICK LINKS-->
+	</div>
+
+	<div id="navBar">
+	<ul id="level1Nav">
+		<li><a href="http://www.antarctica.ac.uk/index.php" title="Access key 1 - Homepage" accesskey="1">Home</a></li>
+		<li><a href="http://www.antarctica.ac.uk/about_bas/index.php" title="About the British Antarctic Survey" id="level1NavSelected">About BAS</a></li>
+		<li><a href="http://www.antarctica.ac.uk/bas_research/index.php" title="Information about BAS scientific research">BAS Research</a></li>
+		<li><a href="http://www.antarctica.ac.uk/about_antarctica/index.php" title="Information about the Antarctic continent">About Antarctica</a></li>
+		<li><a href="http://www.antarctica.ac.uk/living_and_working/index.php" title="What it's like to live and work in Antarctica">Living & Working</a></li>
+		<li><a href="http://www.antarctica.ac.uk/images/index.php" title="Image galleries, webcams and video">Images</a></li>
+		<li class="searchForm">
+			<form action="http://search.antarctica.ac.uk/search" method="get" id="level1NavSearch">
+			<div id="searchDiv"><label class="searchLabel" for="searchFunction">Search this site</label><input id="searchFunction" name="q" type="text" accesskey="4" title="Search box" value="" size="13" maxlength="300" /><label class="searchLabel" for="searchButton">Search</label><input type="image" name="btnG" src="https://secure.antarctica.ac.uk/images/global/buttonsearch.gif" id="searchButton" alt="Search" title="Search" />
+               <input type="hidden" name="entqr" value="0" />
+
+                  <input type="hidden" name="ud" value="1" />
+                  <input type="hidden" name="sort" value="date:D:L:d1" />
+                  <input type="hidden" name="output" value="xml_no_dtd" />
+                  <input type="hidden" name="oe" value="UTF-8" /><input type="hidden" name="ie" value="UTF-8" />
+                  <input type="hidden" name="client" value="default_frontend" />
+                  <input type="hidden" name="proxystylesheet" value="default_frontend" />
+
+                  <input type="hidden" name="site" value="default_collection" />
+			</div>
+			</form>
+		</li>
+	</ul>
+	</div>	
+
+	<div id="mainContent">
+	
+
+
+	<!--START MIDDLE COLUMN-->
+	<div id="mainColumn">
+		<a name="beginContent" id="beginContent"></a><h1>British Antarctic Survey</h1>
+		<div id="breadcrumbs">
+			<p><a href="/" title="Access key 1 - Homepage" accesskey="1">Home</a> &gt;&gt; <a href="http://www.antarctica.ac.uk/about_bas/index.php">About BAS</a> &gt;&gt; <a href="http://www.antarctica.ac.uk/about_bas/events/index.php">Events and Meetings</a> &gt;&gt; CASSII Workshop 2014</p>
+		</div>		
+
+		<div id="contentMain">
+		<!--START OF CONTENT-->
+
+		<p><a href="https://github.com/antarctica">British Antarctic Survey Github Repositories</a></p>
+
+
+		{% for repo in public_repositories %}
+
+		{{ repo.name }}
+
+		{% endfor %}
+
+		<h2>Content</h2>
+
+		{{ content }}
+
+		<!--START OF CONTENT-->
+		</div>
+
+
+	</div>
+</div>
+	
+<!--START FOOTER-->
+<div id="footer">
+	<ul id="footerLinks">
+		<li><a href="http://www.nerc.ac.uk/" title="Go to the Natural Environment Research Council's website"><img src="https://secure.antarctica.ac.uk/images/global/logonerc.gif" alt="Natural Environment Research Council" width="138" height="43" /></a><a href="http://www.investorsinpeople.co.uk/" title="Go to the Investors in People's website"><img src="https://secure.antarctica.ac.uk/images/global/logoip.gif" alt="Investor in People" width="89" height="43" /></a><a href="http://www.antarctica.ac.uk/site/index.php" title="Information about this website">About This Site</a> |</li>
+		<li> <a href="http://www.antarctica.ac.uk/site/sitemap.php" title="Access key 3 - Site Map" accesskey="3">Site Map</a> |</li>
+		<li> <a href="http://www.antarctica.ac.uk/site/accessibility.php" title="Access key 0 - Access Key details" accesskey="0">Access Keys</a> |</li> 
+		<li> <a href="http://www.antarctica.ac.uk/staff/index.php" title="Resources for BAS employees">For Staff</a></li>
+	</ul>
+	<p>&copy; BAS 2015</p>
+</div>
+<!--END FOOTER-->
+
+</div>
+
+</body>
+</html>
+
+
