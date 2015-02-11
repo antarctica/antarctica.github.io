@@ -98,11 +98,13 @@
 
 
 		<h2>Repo Listing</h2>
+		<ul>
 		{% for repository in site.github.public_repositories %}
 	  	  {% unless if repository contains 'ansible' %}
 		    <li><a href="{{ repository.html_url }}">{{ repository.name }}</a> - {{ repository.description }}</li>
 		  {% endif %}
 		{% endfor %}
+		</ul>
 		
 		<h3>Ansible Roles</h3>
 		<ul>
