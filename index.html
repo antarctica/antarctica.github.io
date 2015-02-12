@@ -100,7 +100,7 @@
 		<h2>Repo Listing</h2>
 		<ul>
 		{% for repository in site.github.public_repositories %}
-	  	  {% unless if repository.name contains 'ansible' %}
+	  	  {% if repository.name contains 'ansible' %}
 		    <li><a href="{{ repository.html_url }}">{{ repository.name }}</a> - {{ repository.description }}</li>
 		  {% endif %}
 		{% endfor %}
